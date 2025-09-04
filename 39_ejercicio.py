@@ -8,7 +8,7 @@ operaciones = [("compra", 0), ("venta", 3), ("compra", 2), ("venta", 4)]
 
 def simular_mercado(precios, operaciones):
     beneficio_total = 0
-    accion_abierta = None  # almacena el precio de compra de la acción abierta
+    accion_abierta = None 
     
     for op, dia in operaciones:
         precio = precios[dia]
@@ -23,6 +23,5 @@ def simular_mercado(precios, operaciones):
     
     return beneficio_total
 
-# Ejemplo de uso
 resultado = simular_mercado(precios_diarios, operaciones)
 print(f"Beneficio/Pérdida total: {resultado}")

@@ -22,11 +22,9 @@ def ranking_estudiantes(estudiantes):
         promedio_general = sum(todas_notas) / len(todas_notas)
         promedios[id_est] = round(promedio_general, 2)
     
-    # Ordenar por promedio de mayor a menor
     ranking = sorted(promedios.items(), key=lambda x: x[1], reverse=True)
     return ranking
 
-# Ejemplo de uso
 ranking = ranking_estudiantes(estudiantes)
 print("Ranking de estudiantes (ID, Promedio):")
 for id_est, promedio in ranking:
